@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Oswald"
+    }
+
+    body {
+        font-family: "Open Sans"
+    }
+</style>
+<body class="w3-light-grey">
+
+
+    <!-- Navigation bar with social media icons -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <a href="index.html"><img src="img01.jpg" style="width:100%"></a>
+
+        <a href="plan.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>未來規劃</p>
+        </a>
+        <a href="mis.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <img src="csumis.png" width="50" height="50" />
+            <p>我的系學會</p>
+        </a>
+
+
+    </nav>
+
+
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1600px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-48 w3-white">
+            <h1 class="w3-xxxlarge"><b>我的系學會</b></h1>
+            <h6>Welcome to my <span class="w3-tag">website</span></h6>
+        </header>
+
+        <!-- Image header -->
+        <header class="w3-display-container w3-wide" id="home">
+            <img class="w3-image" src="mis.jpg" alt="Fashion Blog" width="1600" height="1060">
+            <div class="w3-display-left w3-padding-large">
+
+
+            </div>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row w3-padding w3-border">
+
+            <!-- Blog entries -->
+            <!-- About/Information menu -->
+            <div class="w3-col l4">
+                <!-- About Card -->
+                <div class="w3-white w3-margin">
+                    <img src="class01.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container w3-black">
+                        <h4>我們資管系與其他商管學院的社課</h4>
+                        <p>這學期我們商管學院為了讓新入的系學會成員能夠了解彼此，所我們特別與金融管理系，企業管理系，國際企劃系辦了聯合社課也看到大家玩的很開心。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l4">
+                <!-- About Card -->
+                <div class="w3-white w3-margin">
+                    <img src="class02.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container w3-black">
+                        <h4>上完社課的大合照</h4>
+                        <p>社課上完不免俗都會來張資管系當天到的成員的大合照，很感謝每次來參加社課的弟弟妹妹們。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l4">
+                <!-- About Card -->
+                <div class="w3-white w3-margin">
+                    <img src="tiktok.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container w3-black">
+                        <h4>名人講座與他們的合照</h4>
+                        <p>
+                            這次名人演講非常開心邀請到了YOUTUBER"我們OUR CHANNEL陳華&言奕組"來為我們演講，在現場聽到他們唱歌真的很幸福，也很開心能與他們合照。
+                        </p>
+                    </div>
+                </div>
+            </div><!-- END GRID -->
+        </div>
+        <div class="w3-bar w3-black w3-hide-">
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+        </div>
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Subscribe Modal -->
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey" style="padding:32px">
+        <a href="index.html" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>Home</a>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Toggle between hiding and showing blog replies/comments
+        document.getElementById("myBtn").click();
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function likeFunction(x) {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "✓ Liked";
+        }
+    </script>
+
+</body>
+</html>
